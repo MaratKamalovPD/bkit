@@ -43,16 +43,16 @@ namespace FigureCollections
 
             ///________________________________________________________________________________________________
             Console.WriteLine("\nМатрица"); /// Пример использования разреженной матрицы для геометрических фигур
-            Matrix<Figure> matrix = new Matrix<Figure>(3, 3, new FigureMatrixCheckEmpty()); 
-            matrix[0, 0] = rect;
-            matrix[1, 1] = square;
-            matrix[2, 2] = circle;
+            Matrix<Figure> matrix = new Matrix<Figure>(3, 3, 3, new FigureMatrixCheckEmpty()); 
+            matrix[0, 0, 0] = rect;
+            matrix[1, 1, 0] = square;
+            matrix[2, 2, 0] = circle;
             Console.WriteLine(matrix.ToString());
 
 
             try  //Выход за границы индекса и обработка исключения
             {
-                Figure temp = matrix[123, 123];
+                Figure temp = matrix[123, 123, 123];
             }
             catch (ArgumentOutOfRangeException e)
             {

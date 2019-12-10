@@ -4,18 +4,14 @@ namespace FigureCollections
 {
     class FigureMatrixCheckEmpty : IMatrixCheckEmpty<Figure>
     {
-        /// <summary>
-        /// В качестве пустого элемента возвращается null
-        /// </summary>
-        public Figure getEmptyElement()
+        
+        public Figure getEmptyElement() /// В качестве пустого элемента возвращается null
         {
             return null;
         }
 
-        /// <summary>
-        /// Проверка что переданный параметр равен null
-        /// </summary>
-        public bool checkEmptyElement(Figure element)
+        
+        public bool checkEmptyElement(Figure element) /// Проверка что переданный параметр равен null
         {
             bool Result = false;
             if (element == null)
