@@ -8,5 +8,6 @@ namespace FigureCollections
     interface IPrint
     {
         void Print();
+        
     }
 }
