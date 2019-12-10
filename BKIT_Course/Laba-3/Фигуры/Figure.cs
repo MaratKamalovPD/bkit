@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace Figures
 {
        
-    abstract class Figure  /// абстрактный класс "фигура"
+    abstract class Figure  /// Класс фигура
     {
         
         
-        public string Type /// Тип фигуры, объявленный как свойство
+        public string Type /// Тип фигуры
         {
             get
             {
@@ -26,15 +26,14 @@ namespace Figures
  
         
         
-        public abstract double Area(); /// Виртуальный метод для вычисления площади
+        public abstract double Area(); /// Вычисление площади
 
         
         
         
-        public override string ToString() /// Приведение к строке основных параметров фигуры и ее площади, переопределение метода Object
+        public override string ToString() /// Приведение к строке, переопределение метода Object
         {
             return this.Type + " площадью " + this.Area().ToString();
         }
-
     }
 }
