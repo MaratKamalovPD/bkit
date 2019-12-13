@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laba-1", "Laba-1\Laba-1.csproj", "{7FD1D175-758B-4799-A66D-7B698E9425CF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laba-2", "..\Laba_2\Laba_2\Laba-2.csproj", "{AE484F27-42F4-43BE-96F6-F96DE1F92C32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Laba-2", "Laba-2\Laba_2\Laba-2.csproj", "{6A28685B-1ACC-473F-9EB5-F0BD81F56AF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-3", "FigureCollections\FigureCollections\Laba-3.csproj", "{0CF196E6-77F4-40E0-83BA-B8C2BD08706C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-3", "Laba-3\FigureCollections\Laba-3.csproj", "{0CF196E6-77F4-40E0-83BA-B8C2BD08706C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-6.1", "..\..\..\..\..\Desktop\БКИТ\Delegates\Delegates\Laba-6.1.csproj", "{D453F147-ACC8-4CEA-ADF9-BD2571EB9BCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-6.1", "Laba-6\Laba-6.1\Delegates\Laba-6.1.csproj", "{D453F147-ACC8-4CEA-ADF9-BD2571EB9BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-6.2", "..\..\..\..\..\Desktop\БКИТ\Reflection\Reflection\Laba-6.2.csproj", "{667684DA-3988-4080-B6F2-F0A84DFBD070}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-6.2", "Laba-6\Laba-6.2\Reflection\Laba-6.2.csproj", "{667684DA-3988-4080-B6F2-F0A84DFBD070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{7FD1D175-758B-4799-A66D-7B698E9425CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FD1D175-758B-4799-A66D-7B698E9425CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FD1D175-758B-4799-A66D-7B698E9425CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE484F27-42F4-43BE-96F6-F96DE1F92C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE484F27-42F4-43BE-96F6-F96DE1F92C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE484F27-42F4-43BE-96F6-F96DE1F92C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE484F27-42F4-43BE-96F6-F96DE1F92C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A28685B-1ACC-473F-9EB5-F0BD81F56AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A28685B-1ACC-473F-9EB5-F0BD81F56AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A28685B-1ACC-473F-9EB5-F0BD81F56AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A28685B-1ACC-473F-9EB5-F0BD81F56AF7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0CF196E6-77F4-40E0-83BA-B8C2BD08706C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0CF196E6-77F4-40E0-83BA-B8C2BD08706C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF196E6-77F4-40E0-83BA-B8C2BD08706C}.Release|Any CPU.ActiveCfg = Release|Any CPU
