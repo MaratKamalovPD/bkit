@@ -37,6 +37,11 @@
             this.textBoxExactTime = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.listBoxResult = new System.Windows.Forms.ListBox();
+            this.textBoxApproxTime = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonApprox = new System.Windows.Forms.Button();
+            this.textBoxMaxDist = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonLoadFile
@@ -94,7 +99,7 @@
             this.buttonExact.Name = "buttonExact";
             this.buttonExact.Size = new System.Drawing.Size(176, 35);
             this.buttonExact.TabIndex = 5;
-            this.buttonExact.Text = " Поиск";
+            this.buttonExact.Text = "Четкий поиск";
             this.buttonExact.UseVisualStyleBackColor = true;
             this.buttonExact.Click += new System.EventHandler(this.buttonExact_Click);
             // 
@@ -110,28 +115,81 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(252, 201);
+            this.label3.Location = new System.Drawing.Point(220, 202);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 20);
+            this.label3.Size = new System.Drawing.Size(182, 20);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Время поиска:";
+            this.label3.Text = "Время четкого поиска:";
             // 
             // listBoxResult
             // 
             this.listBoxResult.FormattingEnabled = true;
             this.listBoxResult.ItemHeight = 20;
-            this.listBoxResult.Location = new System.Drawing.Point(23, 259);
+            this.listBoxResult.Location = new System.Drawing.Point(30, 361);
             this.listBoxResult.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBoxResult.Name = "listBoxResult";
             this.listBoxResult.Size = new System.Drawing.Size(751, 404);
             this.listBoxResult.TabIndex = 8;
+            // 
+            // textBoxApproxTime
+            // 
+            this.textBoxApproxTime.Location = new System.Drawing.Point(441, 312);
+            this.textBoxApproxTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxApproxTime.Name = "textBoxApproxTime";
+            this.textBoxApproxTime.ReadOnly = true;
+            this.textBoxApproxTime.Size = new System.Drawing.Size(340, 26);
+            this.textBoxApproxTime.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(233, 312);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(200, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Время нечеткого поиска:";
+            // 
+            // buttonApprox
+            // 
+            this.buttonApprox.Location = new System.Drawing.Point(22, 252);
+            this.buttonApprox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonApprox.Name = "buttonApprox";
+            this.buttonApprox.Size = new System.Drawing.Size(176, 69);
+            this.buttonApprox.TabIndex = 9;
+            this.buttonApprox.Text = " Нечеткий поиск";
+            this.buttonApprox.UseVisualStyleBackColor = true;
+            this.buttonApprox.Click += new System.EventHandler(this.buttonApprox_Click);
+            // 
+            // textBoxMaxDist
+            // 
+            this.textBoxMaxDist.Location = new System.Drawing.Point(641, 252);
+            this.textBoxMaxDist.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxMaxDist.Name = "textBoxMaxDist";
+            this.textBoxMaxDist.Size = new System.Drawing.Size(110, 26);
+            this.textBoxMaxDist.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(233, 252);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(390, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Максимальное расстояние для нечеткого поиска:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 914);
+            this.Controls.Add(this.textBoxMaxDist);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBoxApproxTime);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonApprox);
             this.Controls.Add(this.listBoxResult);
             this.Controls.Add(this.textBoxExactTime);
             this.Controls.Add(this.label3);
@@ -160,6 +218,11 @@
         private System.Windows.Forms.TextBox textBoxExactTime;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listBoxResult;
+        private System.Windows.Forms.TextBox textBoxApproxTime;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonApprox;
+        private System.Windows.Forms.TextBox textBoxMaxDist;
+        private System.Windows.Forms.Label label5;
     }
 }
 

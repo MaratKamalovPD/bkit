@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Laba_5;
+
 
 namespace WindowsFormsFiles
 {
@@ -104,7 +106,75 @@ namespace WindowsFormsFiles
             }
         }
 
-        
+        private void buttonApprox_Click(object sender, EventArgs e)
+        {
+            //Слово для поиска
+            string word = this.textBoxFind.Text.Trim();
+            EditDistance L = new EditDistance();
+            string wordUpper = word.ToUpper();
+
+            //Если слово для поиска не пусто
+            if (!string.IsNullOrWhiteSpace(word) && list.Count > 0)
+            {
+                int maxDist;
+                if(!int.TryParse(this.textBoxMaxDist.Text.Trim(), out maxDist))
+                {
+                    MessageBox.Show("Необходимо указать максимальное расстояние");
+                    return;
+                }
+
+                if (maxDist < 1 || maxDist > 5)
+                {
+                    MessageBox.Show("Максимальное расстояние должно быть в диапазоне от 1 до 5");
+                    return;
+                }
+
+                
+
+                Stopwatch timer = new Stopwatch();
+                timer.Start();
+
+                int distant, maxDistant;
+
+                if (int.TryParse(textBoxMaxDist.Text, out maxDistant))
+                {
+                    listBoxResult.BeginUpdate();
+                    listBoxResult.Items.Clear();
+
+                    foreach (string str in list)
+                    {
+                        distant = L.Distance(str.ToUpper(), wordUpper);
+
+                        if (distant <= maxDistant)
+                        {
+                            listBoxResult.Items.Add(str + "  (расстояние = " + distant.ToString() + ")");
+                        }
+                    }
+
+                    if (listBoxResult.Items.Count == 0) listBoxResult.Items.Add("Слова не найдены! Введите расстояние Левенштейна бОльшее!");
+
+                    listBoxResult.EndUpdate();
+                }
+                else
+                {
+                    textBoxMaxDist.Text = "Целое Число..";
+                    listBoxResult.Items.Clear();
+                }
+
+                timer.Stop();
+
+                
+                
+
+                //Окончание обновления списка результатов
+                this.listBoxResult.EndUpdate();
+            }
+            else
+            {
+                MessageBox.Show("Необходимо выбрать файл и ввести слово для поиска");
+            }
+
+        }
 
         
 

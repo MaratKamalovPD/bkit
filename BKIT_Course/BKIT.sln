@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-6.2", "Laba-6\Laba-6.2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-4", "Laba-4\WindowsFormsFiles\Laba-4.csproj", "{C38D77AD-97F1-4964-A28A-6CB26E1D358A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba-5", "Laba-5\Laba-5.csproj", "{C77AE2E9-278F-4F7D-AD3A-F3A10A241CAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C38D77AD-97F1-4964-A28A-6CB26E1D358A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C38D77AD-97F1-4964-A28A-6CB26E1D358A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C38D77AD-97F1-4964-A28A-6CB26E1D358A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77AE2E9-278F-4F7D-AD3A-F3A10A241CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77AE2E9-278F-4F7D-AD3A-F3A10A241CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77AE2E9-278F-4F7D-AD3A-F3A10A241CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77AE2E9-278F-4F7D-AD3A-F3A10A241CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
