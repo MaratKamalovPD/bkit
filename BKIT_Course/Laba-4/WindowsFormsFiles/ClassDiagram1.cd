@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsFormsFiles.Form1" Collapsed="true">
+    <Position X="7" Y="1.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AIEAAgEAACAABBAAgACIAADGAAAAQAAAAAAADAAAEAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsFiles.Program" Collapsed="true">
+    <Position X="5.25" Y="1.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Laba_5.EditDistance" Collapsed="true">
+    <Position X="5.75" Y="2.25" Width="1.25" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
